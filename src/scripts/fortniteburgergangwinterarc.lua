@@ -616,12 +616,19 @@ local script = G2L["1d"];
 		end
 	end
 	
-	local function isInView(player)
+	local function isVisible(player)
 		local head = player.Character and player.Character:FindFirstChild("Head")
 		if not head then return false end
 	
-		local screenPoint, onScreen = camera:WorldToScreenPoint(head.Position)
-		return onScreen
+		local rayOrigin = camera.CFrame.Position
+		local rayDirection = (head.Position - rayOrigin).Unit * 500
+		local raycastResult = workspace:Raycast(rayOrigin, rayDirection)
+	
+		if raycastResult then
+			return raycastResult.Instance.Parent ~= player.Character
+		else
+			return true
+		end
 	end
 	
 	local function setupESP(player)
@@ -646,7 +653,158 @@ local script = G2L["1d"];
 			billboard.Parent = head
 	
 			local function updateDecalColor()
-				if isInView(player) then
+				if isVisible(player) then
+					local originalColor = imageLabel.ImageColor3
+					local moreRed = Color3.new(1, originalColor.G * 0.6, originalColor.B * 0.6)
+					imageLabel.ImageColor3 = moreRed
+				else
+					imageLabel.ImageColor3 = Color3.new(1, 1, 1)
+				end
+			end
+	
+			game:GetService("RunService").RenderStepped:Connect(function()
+				updateDecalColor()
+			end)
+		end
+	
+		player.CharacterAdded:Connect(onCharacterAdded)
+		if player.Character then
+			onCharacterAdded(player.Character)
+		end
+	end
+	
+	assetTextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local newAssetID = getAssetID()
+			for _, player in pairs(players:GetPlayers()) do
+				if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
+					local billboard = player.Character.Head:FindFirstChild("DistanceBillboard")
+					if billboard and billboard:FindFirstChildOfClass("ImageLabel") then
+						billboard.ImageLabel.Image = newAssetID
+					end
+				end
+			end
+		end
+	end)
+	
+	sizeTextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local newSize = getSize()
+			for _, player in pairs(players:GetPlayers()) do
+				if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
+					local billboard = player.Character.Head:FindFirstChild("DistanceBillboard")
+					if billboard then
+						billboard.Size = UDim2.new(0, newSize, 0, newSize)
+					end
+				end
+			end
+		end
+	end)
+	
+	yOffsetTextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local newYOffset = getYOffset()
+			for _, player in pairs(players:GetPlayers()) do
+				if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
+					local billboard = player.Character.Head:FindFirstChild("DistanceBillboard")
+					if billboard then
+						billboard.StudsOffset = Vector3.new(0, newYOffset, 0)
+					end
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(toggleESP)
+	
+	for _, player in pairs(players:GetPlayers()) do
+		setupESP(player)
+	end
+	
+	players.PlayerAdded:Connect(setupESP)
+	local players = game:GetService("Players")
+	local localPlayer = players.LocalPlayer
+	local button = script.Parent.snoopdog
+	local assetTextBox = script.Parent.letmepegyouwithaskateboard
+	local sizeTextBox = script.Parent.RichardWatterson
+	local yOffsetTextBox = script.Parent.YOffsetTextBox
+	local espEnabled = false
+	local colorOn = Color3.fromHex("#349a0f")
+	local colorOff = Color3.fromHex("#9a0a0a")
+	local defaultAssetID = "rbxassetid://92401567"
+	local defaultSize = 14
+	local defaultYOffset = 3
+	local camera = workspace.CurrentCamera
+	
+	button.BackgroundColor3 = colorOff
+	assetTextBox.Text = defaultAssetID
+	sizeTextBox.Text = tostring(defaultSize)
+	yOffsetTextBox.Text = tostring(defaultYOffset)
+	
+	local function getAssetID()
+		return "rbxassetid://" .. (tonumber(assetTextBox.Text) or 92401567)
+	end
+	
+	local function getSize()
+		return tonumber(sizeTextBox.Text) or defaultSize
+	end
+	
+	local function getYOffset()
+		return tonumber(yOffsetTextBox.Text) or defaultYOffset
+	end
+	
+	local function toggleESP()
+		espEnabled = not espEnabled
+		button.BackgroundColor3 = espEnabled and colorOn or colorOff
+	
+		for _, player in pairs(players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
+				local billboard = player.Character.Head:FindFirstChild("DistanceBillboard")
+				if billboard then
+					billboard.Enabled = espEnabled
+				end
+			end
+		end
+	end
+	
+	local function isVisible(player)
+		local head = player.Character and player.Character:FindFirstChild("Head")
+		if not head then return false end
+	
+		local rayOrigin = camera.CFrame.Position
+		local rayDirection = (head.Position - rayOrigin).Unit * 500
+		local raycastResult = workspace:Raycast(rayOrigin, rayDirection)
+	
+		if raycastResult then
+			return raycastResult.Instance.Parent ~= player.Character
+		else
+			return true
+		end
+	end
+	
+	local function setupESP(player)
+		if player == localPlayer then return end
+	
+		local function onCharacterAdded(character)
+			local head = character:WaitForChild("Head")
+	
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "DistanceBillboard"
+			billboard.Adornee = head
+			billboard.Size = UDim2.new(0, getSize(), 0, getSize())
+			billboard.StudsOffset = Vector3.new(0, getYOffset(), 0)
+			billboard.AlwaysOnTop = true
+			billboard.Enabled = espEnabled
+	
+			local imageLabel = Instance.new("ImageLabel", billboard)
+			imageLabel.Size = UDim2.new(1, 0, 1, 0)
+			imageLabel.BackgroundTransparency = 1
+			imageLabel.Image = getAssetID()
+	
+			billboard.Parent = head
+	
+			local function updateDecalColor()
+				if isVisible(player) then
 					local originalColor = imageLabel.ImageColor3
 					local moreRed = Color3.new(1, originalColor.G * 0.6, originalColor.B * 0.6)
 					imageLabel.ImageColor3 = moreRed
