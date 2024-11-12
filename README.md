@@ -2,7 +2,7 @@
 *just a showcase of the lua scripts I've made for Roblox*
 
 ## fortniteburgergangwinterarc.gg [*source*](https://github.com/Slided/myrobloxscripts/blob/main/src/scripts/fortniteburgergangwinterarc.lua)
-*Decal ESP & Walkspeed Multiplier Hub*
+*Universal ESP, Walkspeed Multiplier, and Triggerbot Hub*
 
 ---
 
