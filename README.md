@@ -1,7 +1,7 @@
 # Slided's Script Showcase
 *just a showcase of the lua scripts I've made for Roblox*
 
-## Leathal.Injection [*source*](https://github.com/Slided/myrobloxscripts/blob/main/src/scripts/lethalinjection.lua)
+## Leathal.Injection [*source*](https://github.com/Slided/myrobloxscripts/raw/refs/heads/main/src/scripts/lethalinjection.lua)
 *Open-Source Universal ESP, Walkspeed Multiplier, and Triggerbot Hub*
 
 ---
