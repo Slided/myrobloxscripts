@@ -1,12 +1,30 @@
-game.StarterGui:SetCore("SendNotification", {
-    Title = "github.com/slided";
-    Text = "Thanks For Executing!";
-    Duration = 3;
-})
+--[=[
+_      _     _      _
+ \__(  o     o  )__/
+          -
+             ..                     .''.
+            c  '.          _,,    .'    '
+           ,     ,   ___  7###. .'       '
+          .       `-'   ''|####;#'. .##, .
+          ,               '####.##,######.
+         .                 '  ' '' ,####.
+        '                           '##'.
+       '                                .
+__,,--.--                                '
+      '                                  '
+  .--|-        &&                        -'-'''-.._
+     |         '&              &&         '
+    __,-                       '&        -'---.
+  ''  ,                                   ;
+       .             kk.                 -.-,_
+        -_           ''KK                ;
+          ''--,_                        ,
+                ''--,__           __,,--'
+                       ''--..,--''     
 
-print("github.com/slided")
+]=]
 
--- Instances: 57 | Scripts: 6 | Modules: 0 | Tags: 0
+-- version 4 or 2 idfk - lethal injection
 local G2L = {};
 
 -- StarterGui.Roblox
@@ -17,11 +35,10 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.Roblox.Title
 G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["Visible"] = false;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(76, 76, 76);
-G2L["2"]["Size"] = UDim2.new(0, 300, 0, 34);
-G2L["2"]["Position"] = UDim2.new(0.38157, 0, 0.34912, 0);
+G2L["2"]["Size"] = UDim2.new(0, 565, 0, 58);
+G2L["2"]["Position"] = UDim2.new(0.38226, 0, 0.34912, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Title]];
 
@@ -30,8 +47,8 @@ G2L["2"]["Name"] = [[Title]];
 G2L["3"] = Instance.new("Frame", G2L["2"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
-G2L["3"]["Size"] = UDim2.new(0, 300, 0, 221);
-G2L["3"]["Position"] = UDim2.new(0, 0, 0.50899, 0);
+G2L["3"]["Size"] = UDim2.new(0, 565, 0, 160);
+G2L["3"]["Position"] = UDim2.new(-0.00001, 0, 0.51748, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Name"] = [[Main]];
 
@@ -47,340 +64,328 @@ G2L["5"]["Thickness"] = 1.6;
 G2L["5"]["Color"] = Color3.fromRGB(0, 133, 0);
 
 
+-- StarterGui.Roblox.Title.Main.UIStroke.ACBP
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+G2L["6"]["Name"] = [[ACBP]];
+
+
 -- StarterGui.Roblox.Title.Main.Background
-G2L["6"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(72, 0, 108);
-G2L["6"]["ImageTransparency"] = 0.9;
-G2L["6"]["Image"] = [[http://www.roblox.com/asset/?id=108219657565083]];
-G2L["6"]["Size"] = UDim2.new(0, 300, 0, 220);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["BackgroundTransparency"] = 1;
-G2L["6"]["Name"] = [[Background]];
-G2L["6"]["Position"] = UDim2.new(-0.00333, 0, 0.0022, 0);
+G2L["7"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(72, 0, 108);
+G2L["7"]["ImageTransparency"] = 0.8;
+G2L["7"]["Image"] = [[http://www.roblox.com/asset/?id=106443554005676]];
+G2L["7"]["Size"] = UDim2.new(0, 566, 0, 159);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Name"] = [[Background]];
+G2L["7"]["Position"] = UDim2.new(-0.00333, 0, 0.0022, 0);
 
 
 -- StarterGui.Roblox.Title.Main.Workspace
-G2L["7"] = Instance.new("Frame", G2L["3"]);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 44, 0);
-G2L["7"]["Size"] = UDim2.new(0, 286, 0, 206);
-G2L["7"]["Position"] = UDim2.new(0.02333, 0, 0.03167, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Name"] = [[Workspace]];
-G2L["7"]["BackgroundTransparency"] = 0.9;
+G2L["8"] = Instance.new("Frame", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 44, 0);
+G2L["8"]["Size"] = UDim2.new(0, 542, 0, 143);
+G2L["8"]["Position"] = UDim2.new(0.01976, 0, 0.05045, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Name"] = [[Workspace]];
+G2L["8"]["BackgroundTransparency"] = 0.9;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.UICorner
-G2L["8"] = Instance.new("UICorner", G2L["7"]);
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
 
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.UIStroke
-G2L["9"] = Instance.new("UIStroke", G2L["7"]);
-G2L["9"]["Transparency"] = 0.72;
-G2L["9"]["Thickness"] = 1.6;
-G2L["9"]["Color"] = Color3.fromRGB(0, 28, 0);
+G2L["a"] = Instance.new("UIStroke", G2L["8"]);
+G2L["a"]["Transparency"] = 0.72;
+G2L["a"]["Thickness"] = 1.6;
+G2L["a"]["Color"] = Color3.fromRGB(0, 28, 0);
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron
-G2L["a"] = Instance.new("Folder", G2L["7"]);
-G2L["a"]["Name"] = [[blessedbydaddybronbron]];
+G2L["b"] = Instance.new("Folder", G2L["8"]);
+G2L["b"]["Name"] = [[blessedbydaddybronbron]];
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.codedbyslidedongithub
-G2L["b"] = Instance.new("TextButton", G2L["a"]);
-G2L["b"]["BorderSizePixel"] = 2;
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["Size"] = UDim2.new(0, 22, 0, 22);
-G2L["b"]["Name"] = [[codedbyslidedongithub]];
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[]];
-G2L["b"]["Position"] = UDim2.new(0.1, 0, 0.81768, 0);
+G2L["c"] = Instance.new("TextButton", G2L["b"]);
+G2L["c"]["BorderSizePixel"] = 2;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["c"]["Name"] = [[codedbyslidedongithub]];
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[]];
+G2L["c"]["Position"] = UDim2.new(0.03657, 0, 0.31686, 0);
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.codedbyslidedongithub.UICorner
-G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
 
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.codedbyslidedongithub.UIStroke
-G2L["d"] = Instance.new("UIStroke", G2L["b"]);
-G2L["d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d"]["Thickness"] = 1.6;
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e"]["Thickness"] = 1.6;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.DonaldTrump
-G2L["e"] = Instance.new("TextLabel", G2L["a"]);
-G2L["e"]["TextWrapped"] = true;
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["e"]["TextSize"] = 22;
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e"]["TextColor3"] = Color3.fromRGB(159, 159, 159);
-G2L["e"]["Size"] = UDim2.new(0, 164, 0, 27);
-G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[TriggerBot]];
-G2L["e"]["Name"] = [[DonaldTrump]];
-G2L["e"]["Position"] = UDim2.new(0.25175, 0, 0.81098, 0);
+G2L["f"] = Instance.new("TextLabel", G2L["b"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["f"]["TextSize"] = 22;
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["f"]["Size"] = UDim2.new(0, 129, 0, 25);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[TriggerBot]];
+G2L["f"]["Name"] = [[DonaldTrump]];
+G2L["f"]["Position"] = UDim2.new(0.10063, 0, 0.31686, 0);
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.DonaldTrump.UIStroke
-G2L["f"] = Instance.new("UIStroke", G2L["e"]);
-G2L["f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["f"]["Thickness"] = 1.6;
+G2L["10"] = Instance.new("UIStroke", G2L["f"]);
+G2L["10"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["10"]["Thickness"] = 1.6;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.DonaldTrump.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["e"]);
+G2L["11"] = Instance.new("UICorner", G2L["f"]);
 
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.KamalaHarris
-G2L["11"] = Instance.new("LocalScript", G2L["a"]);
-G2L["11"]["Name"] = [[KamalaHarris]];
+G2L["12"] = Instance.new("LocalScript", G2L["b"]);
+G2L["12"]["Name"] = [[KamalaHarris]];
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme
-G2L["12"] = Instance.new("Folder", G2L["7"]);
-G2L["12"]["Name"] = [[erpwithme]];
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp
+G2L["13"] = Instance.new("Folder", G2L["8"]);
+G2L["13"]["Name"] = [[bestrevisionofesp]];
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.snoopdog
-G2L["13"] = Instance.new("TextButton", G2L["12"]);
-G2L["13"]["BorderSizePixel"] = 2;
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13"]["Size"] = UDim2.new(0, 22, 0, 22);
-G2L["13"]["Name"] = [[snoopdog]];
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[]];
-G2L["13"]["Position"] = UDim2.new(0.1, 0, 0.24421, 0);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.snoopdog
+G2L["14"] = Instance.new("TextButton", G2L["13"]);
+G2L["14"]["BorderSizePixel"] = 2;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["14"]["Name"] = [[snoopdog]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[]];
+G2L["14"]["Position"] = UDim2.new(0.53284, 0, 0.04439, 0);
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.snoopdog.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["13"]);
-
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.snoopdog.UIStroke
-G2L["15"] = Instance.new("UIStroke", G2L["13"]);
-G2L["15"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["15"]["Thickness"] = 1.6;
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.kodiene
-G2L["16"] = Instance.new("LocalScript", G2L["12"]);
-G2L["16"]["Name"] = [[kodiene]];
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.logo
-G2L["17"] = Instance.new("TextLabel", G2L["12"]);
-G2L["17"]["TextWrapped"] = true;
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["17"]["TextSize"] = 22;
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17"]["TextColor3"] = Color3.fromRGB(159, 159, 159);
-G2L["17"]["Size"] = UDim2.new(0, 164, 0, 27);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[ESP: v3]];
-G2L["17"]["Name"] = [[logo]];
-G2L["17"]["Position"] = UDim2.new(0.25175, 0, 0.24421, 0);
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.logo.UIStroke
-G2L["18"] = Instance.new("UIStroke", G2L["17"]);
-G2L["18"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["18"]["Thickness"] = 1.6;
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.logo.UICorner
-G2L["19"] = Instance.new("UICorner", G2L["17"]);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.snoopdog.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
 
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.letmepegyouwithaskateboard
-G2L["1a"] = Instance.new("TextBox", G2L["12"]);
-G2L["1a"]["CursorPosition"] = -1;
-G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["TextWrapped"] = true;
-G2L["1a"]["TextSize"] = 12;
-G2L["1a"]["Name"] = [[letmepegyouwithaskateboard]];
-G2L["1a"]["TextScaled"] = true;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a"]["PlaceholderText"] = [[ESP Icon (Decal ID)]];
-G2L["1a"]["Size"] = UDim2.new(0, 145, 0, 19);
-G2L["1a"]["Position"] = UDim2.new(0.28322, 0, 0.40486, 0);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[]];
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.snoopdog.UIStroke
+G2L["16"] = Instance.new("UIStroke", G2L["14"]);
+G2L["16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["16"]["Thickness"] = 1.6;
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.letmepegyouwithaskateboard.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.kodiene
+G2L["17"] = Instance.new("LocalScript", G2L["13"]);
+G2L["17"]["Name"] = [[kodiene]];
 
 
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.letmepegyouwithaskateboard.UIStroke
-G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
-G2L["1c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["1c"]["Thickness"] = 1.6;
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.RichardWatterson
-G2L["1d"] = Instance.new("TextBox", G2L["12"]);
-G2L["1d"]["CursorPosition"] = -1;
-G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["TextWrapped"] = true;
-G2L["1d"]["TextSize"] = 12;
-G2L["1d"]["Name"] = [[RichardWatterson]];
-G2L["1d"]["TextScaled"] = true;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d"]["PlaceholderText"] = [[ESP Icon (Decal Size)]];
-G2L["1d"]["Size"] = UDim2.new(0, 145, 0, 19);
-G2L["1d"]["Position"] = UDim2.new(0.28322, 0, 0.53047, 0);
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[]];
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.logo
+G2L["18"] = Instance.new("TextLabel", G2L["13"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["18"]["TextSize"] = 22;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["18"]["Size"] = UDim2.new(0, 130, 0, 24);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[ESP: v4]];
+G2L["18"]["Name"] = [[logo]];
+G2L["18"]["Position"] = UDim2.new(0.60436, 0, 0.04533, 0);
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.RichardWatterson.UICorner
-G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.logo.UIStroke
+G2L["19"] = Instance.new("UIStroke", G2L["18"]);
+G2L["19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["19"]["Thickness"] = 1.6;
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.logo.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["18"]);
 
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.RichardWatterson.UIStroke
-G2L["1f"] = Instance.new("UIStroke", G2L["1d"]);
-G2L["1f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["1f"]["Thickness"] = 1.6;
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.letmepegyouwithaskateboard
+G2L["1b"] = Instance.new("TextBox", G2L["13"]);
+G2L["1b"]["CursorPosition"] = -1;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["TextSize"] = 12;
+G2L["1b"]["Name"] = [[letmepegyouwithaskateboard]];
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["PlaceholderText"] = [[ESP Icon (Decal ID)]];
+G2L["1b"]["Size"] = UDim2.new(0, 145, 0, 19);
+G2L["1b"]["Position"] = UDim2.new(0.43434, 0, 0.35287, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[]];
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.YOffsetTextBox
-G2L["20"] = Instance.new("TextBox", G2L["12"]);
-G2L["20"]["CursorPosition"] = -1;
-G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextWrapped"] = true;
-G2L["20"]["TextSize"] = 12;
-G2L["20"]["Name"] = [[YOffsetTextBox]];
-G2L["20"]["TextScaled"] = true;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20"]["PlaceholderText"] = [[ESP Icon (Y Axis)]];
-G2L["20"]["Size"] = UDim2.new(0, 145, 0, 19);
-G2L["20"]["Position"] = UDim2.new(0.28322, 0, 0.65607, 0);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[]];
-
-
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.YOffsetTextBox.UICorner
-G2L["21"] = Instance.new("UICorner", G2L["20"]);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.letmepegyouwithaskateboard.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["1b"]);
 
 
 
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.YOffsetTextBox.UIStroke
-G2L["22"] = Instance.new("UIStroke", G2L["20"]);
-G2L["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["22"]["Thickness"] = 1.6;
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.letmepegyouwithaskateboard.UIStroke
+G2L["1d"] = Instance.new("UIStroke", G2L["1b"]);
+G2L["1d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1d"]["Thickness"] = 1.6;
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.RichardWatterson
+G2L["1e"] = Instance.new("TextBox", G2L["13"]);
+G2L["1e"]["CursorPosition"] = -1;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["TextSize"] = 12;
+G2L["1e"]["Name"] = [[RichardWatterson]];
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["PlaceholderText"] = [[ESP Icon (Decal Size)]];
+G2L["1e"]["Size"] = UDim2.new(0, 145, 0, 19);
+G2L["1e"]["Position"] = UDim2.new(0.57799, 0, 0.55914, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[]];
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.RichardWatterson.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.RichardWatterson.UIStroke
+G2L["20"] = Instance.new("UIStroke", G2L["1e"]);
+G2L["20"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["20"]["Thickness"] = 1.6;
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.YOffsetTextBox
+G2L["21"] = Instance.new("TextBox", G2L["13"]);
+G2L["21"]["CursorPosition"] = -1;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["TextSize"] = 12;
+G2L["21"]["Name"] = [[YOffsetTextBox]];
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["PlaceholderText"] = [[ESP Icon (Y Axis)]];
+G2L["21"]["Size"] = UDim2.new(0, 145, 0, 19);
+G2L["21"]["Position"] = UDim2.new(0.71792, 0, 0.35815, 0);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[]];
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.YOffsetTextBox.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+
+
+
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.YOffsetTextBox.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["21"]);
+G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["23"]["Thickness"] = 1.6;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott
-G2L["23"] = Instance.new("Folder", G2L["7"]);
-G2L["23"]["Name"] = [[TravisScott]];
+G2L["24"] = Instance.new("Folder", G2L["8"]);
+G2L["24"]["Name"] = [[TravisScott]];
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.AstroworldTragedy
-G2L["24"] = Instance.new("TextButton", G2L["23"]);
-G2L["24"]["BorderSizePixel"] = 2;
-G2L["24"]["TextSize"] = 14;
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24"]["Size"] = UDim2.new(0, 22, 0, 22);
-G2L["24"]["Name"] = [[AstroworldTragedy]];
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[]];
-G2L["24"]["Position"] = UDim2.new(0.1, 0, 0.05376, 0);
+G2L["25"] = Instance.new("TextButton", G2L["24"]);
+G2L["25"]["BorderSizePixel"] = 2;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(155, 11, 11);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["25"]["Name"] = [[AstroworldTragedy]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[]];
+G2L["25"]["Position"] = UDim2.new(0.03657, 0, 0.04439, 0);
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.AstroworldTragedy.UICorner
-G2L["25"] = Instance.new("UICorner", G2L["24"]);
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
 
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.AstroworldTragedy.UIStroke
-G2L["26"] = Instance.new("UIStroke", G2L["24"]);
-G2L["26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["26"]["Thickness"] = 1.6;
+G2L["27"] = Instance.new("UIStroke", G2L["25"]);
+G2L["27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["27"]["Thickness"] = 1.6;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.TravisScottMeal
-G2L["27"] = Instance.new("TextBox", G2L["23"]);
-G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextWrapped"] = true;
-G2L["27"]["TextSize"] = 16;
-G2L["27"]["Name"] = [[TravisScottMeal]];
-G2L["27"]["TextScaled"] = true;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["PlaceholderText"] = [[Walkspeed Multiplier]];
-G2L["27"]["Size"] = UDim2.new(0, 164, 0, 27);
-G2L["27"]["Position"] = UDim2.new(0.25175, 0, 0.04707, 0);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[]];
+G2L["28"] = Instance.new("TextBox", G2L["24"]);
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["TextSize"] = 16;
+G2L["28"]["Name"] = [[TravisScottMeal]];
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["PlaceholderText"] = [[Walkspeed Multiplier]];
+G2L["28"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["28"]["Position"] = UDim2.new(0.09767, 0, 0.04158, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[]];
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.TravisScottMeal.UICorner
-G2L["28"] = Instance.new("UICorner", G2L["27"]);
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
 
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.TravisScottMeal.UIStroke
-G2L["29"] = Instance.new("UIStroke", G2L["27"]);
-G2L["29"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["29"]["Thickness"] = 1.6;
+G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2a"]["Thickness"] = 1.6;
 
 
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.AstroworldFestivalCrowdCrush
-G2L["2a"] = Instance.new("LocalScript", G2L["23"]);
-G2L["2a"]["Name"] = [[AstroworldFestivalCrowdCrush]];
+G2L["2b"] = Instance.new("LocalScript", G2L["24"]);
+G2L["2b"]["Name"] = [[AstroworldFestivalCrowdCrush]];
 
 
 -- StarterGui.Roblox.Title.UICorner
-G2L["2b"] = Instance.new("UICorner", G2L["2"]);
+G2L["2c"] = Instance.new("UICorner", G2L["2"]);
 
 
 
 -- StarterGui.Roblox.Title.UIStroke
-G2L["2c"] = Instance.new("UIStroke", G2L["2"]);
-G2L["2c"]["Thickness"] = 1.6;
-G2L["2c"]["Color"] = Color3.fromRGB(0, 108, 0);
-
-
--- StarterGui.Roblox.Title.HubName
-G2L["2d"] = Instance.new("TextLabel", G2L["2"]);
-G2L["2d"]["TextWrapped"] = true;
-G2L["2d"]["TextStrokeTransparency"] = 0.6;
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["BackgroundTransparency"] = 1;
-G2L["2d"]["Size"] = UDim2.new(0, 115, 0, 15);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[Leathal.Injection]];
-G2L["2d"]["Name"] = [[HubName]];
-G2L["2d"]["Position"] = UDim2.new(0.0014, 0, -0.00735, 0);
+G2L["2d"] = Instance.new("UIStroke", G2L["2"]);
+G2L["2d"]["Thickness"] = 1.6;
+G2L["2d"]["Color"] = Color3.fromRGB(0, 108, 0);
 
 
 -- StarterGui.Roblox.Title.HideAndOpen
@@ -393,91 +398,169 @@ G2L["2f"] = Instance.new("LocalScript", G2L["2"]);
 G2L["2f"]["Name"] = [[DragScript]];
 
 
--- StarterGui.Roblox.Bootstrapper
-G2L["30"] = Instance.new("Frame", G2L["1"]);
+-- StarterGui.Roblox.Title.HubName
+G2L["30"] = Instance.new("TextLabel", G2L["2"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["TextStrokeTransparency"] = 0.6;
 G2L["30"]["BorderSizePixel"] = 0;
 G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["Size"] = UDim2.new(0, 200, 0, 205);
-G2L["30"]["Position"] = UDim2.new(0.4208, 0, 0.36732, 0);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["BackgroundTransparency"] = 1;
+G2L["30"]["Size"] = UDim2.new(0, 115, 0, 15);
 G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Name"] = [[Bootstrapper]];
+G2L["30"]["Text"] = [[Lethal.Injection]];
+G2L["30"]["Name"] = [[HubName]];
+G2L["30"]["Position"] = UDim2.new(0.03515, 0, 0.13058, 0);
+
+
+-- StarterGui.Roblox.Title.HubName.HubVersion
+G2L["31"] = Instance.new("TextLabel", G2L["30"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["TextStrokeTransparency"] = 0.6;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[v2]];
+G2L["31"]["Name"] = [[HubVersion]];
+G2L["31"]["Position"] = UDim2.new(0.88732, 0, -0.00275, 0);
+
+
+-- StarterGui.Roblox.Bootstrapper
+G2L["32"] = Instance.new("Frame", G2L["1"]);
+G2L["32"]["Visible"] = false;
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["Size"] = UDim2.new(0, 200, 0, 205);
+G2L["32"]["Position"] = UDim2.new(0.4208, 0, 0.36732, 0);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Name"] = [[Bootstrapper]];
 
 
 -- StarterGui.Roblox.Bootstrapper.Background
-G2L["31"] = Instance.new("ImageLabel", G2L["30"]);
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["31"]["ImageTransparency"] = 0.65;
-G2L["31"]["Image"] = [[rbxassetid://9704694928]];
-G2L["31"]["Size"] = UDim2.new(0, 200, 0, 205);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Name"] = [[Background]];
+G2L["33"] = Instance.new("ImageLabel", G2L["32"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["33"]["ImageTransparency"] = 0.65;
+G2L["33"]["Image"] = [[rbxassetid://9704694928]];
+G2L["33"]["Size"] = UDim2.new(0, 200, 0, 205);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Name"] = [[Background]];
 
 
 -- StarterGui.Roblox.Bootstrapper.Background.UICorner
-G2L["32"] = Instance.new("UICorner", G2L["31"]);
+G2L["34"] = Instance.new("UICorner", G2L["33"]);
 
 
 
 -- StarterGui.Roblox.Bootstrapper.Background.UIStroke
-G2L["33"] = Instance.new("UIStroke", G2L["31"]);
-G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["33"]["Thickness"] = 1.6;
-G2L["33"]["Color"] = Color3.fromRGB(10, 27, 68);
+G2L["35"] = Instance.new("UIStroke", G2L["33"]);
+G2L["35"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["35"]["Thickness"] = 1.6;
+G2L["35"]["Color"] = Color3.fromRGB(10, 27, 68);
 
 
 -- StarterGui.Roblox.Bootstrapper.UICorner
-G2L["34"] = Instance.new("UICorner", G2L["30"]);
+G2L["36"] = Instance.new("UICorner", G2L["32"]);
 
 
 
 -- StarterGui.Roblox.Bootstrapper.LoadingText
-G2L["35"] = Instance.new("TextLabel", G2L["30"]);
-G2L["35"]["TextWrapped"] = true;
-G2L["35"]["TextStrokeTransparency"] = 0;
-G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["TextSize"] = 29;
-G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["BackgroundTransparency"] = 1;
-G2L["35"]["Size"] = UDim2.new(1.0042, 0, 0.14168, 0);
-G2L["35"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["35"]["Text"] = [[Lethal.Injection]];
-G2L["35"]["Name"] = [[LoadingText]];
-G2L["35"]["Position"] = UDim2.new(-0.0042, 0, 0.69411, 0);
+G2L["37"] = Instance.new("TextLabel", G2L["32"]);
+G2L["37"]["TextWrapped"] = true;
+G2L["37"]["TextStrokeTransparency"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["TextSize"] = 29;
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundTransparency"] = 1;
+G2L["37"]["Size"] = UDim2.new(1.0042, 0, 0.14168, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["37"]["Text"] = [[Lethal.Injection]];
+G2L["37"]["Name"] = [[LoadingText]];
+G2L["37"]["Position"] = UDim2.new(-0.0042, 0, 0.69411, 0);
 
 
 -- StarterGui.Roblox.Bootstrapper.Logo
-G2L["36"] = Instance.new("ImageLabel", G2L["30"]);
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["Image"] = [[rbxassetid://15449298582]];
-G2L["36"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Name"] = [[Logo]];
-G2L["36"]["Position"] = UDim2.new(0.25, 0, 0.13171, 0);
+G2L["38"] = Instance.new("ImageLabel", G2L["32"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["Image"] = [[rbxassetid://15449298582]];
+G2L["38"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[Logo]];
+G2L["38"]["Position"] = UDim2.new(0.25, 0, 0.13171, 0);
 
 
 -- StarterGui.Roblox.Bootstrapper.Logo.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["36"]);
+G2L["39"] = Instance.new("UICorner", G2L["38"]);
 
 
 
 -- StarterGui.Roblox.Bootstrapper.Logo.UIStroke
-G2L["38"] = Instance.new("UIStroke", G2L["36"]);
-G2L["38"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["38"]["Thickness"] = 4.4;
-G2L["38"]["Color"] = Color3.fromRGB(13, 71, 125);
+G2L["3a"] = Instance.new("UIStroke", G2L["38"]);
+G2L["3a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["3a"]["Thickness"] = 4.4;
+G2L["3a"]["Color"] = Color3.fromRGB(13, 71, 125);
 
 
 -- StarterGui.Roblox.loader
-G2L["39"] = Instance.new("LocalScript", G2L["1"]);
-G2L["39"]["Name"] = [[loader]];
+G2L["3b"] = Instance.new("LocalScript", G2L["1"]);
+G2L["3b"]["Name"] = [[loader]];
 
 
+-- StarterGui.Roblox.Title.Main.UIStroke.ACBP
+local function C_6()
+local script = G2L["6"];
+	local F3vLxY = true
+	local W2bQnR = [[game.StarterGui:SetCore("SendNotification", {
+		Title = "github.com/slided";]]
+	
+	local function K4dNyT(jW7CzQ)
+		local s8LxP5 = ""
+		for wJ1Fv9 = 1, #jW7CzQ do
+			s8LxP5 = s8LxP5 .. string.char(jW7CzQ:byte(wJ1Fv9) + 1)
+		end
+		return s8LxP5
+	end
+	
+	local function x9BpL2(sJ6CvZ)
+		local f7NqX1 = ""
+		for zT8LwQ = 1, #sJ6CvZ do
+			f7NqX1 = f7NqX1 .. string.char(sJ6CvZ:byte(zT8LwQ) - 1)
+		end
+		return f7NqX1
+	end
+	
+	local function T7PqL9()
+		if not F3vLxY then return end
+		local mQ5zL8 = x9BpL2(K4dNyT(W2bQnR)) 
+		local tV2FqN = false
+		for _, rL6BvP in pairs(getfenv()) do
+			if type(rL6BvP) == "string" and rL6BvP:find(mQ5zL8) then
+				tV2FqN = true
+				break
+			end
+		end
+		if not tV2FqN then
+			game.Players.LocalPlayer:Kick("edit")
+		end
+		F3vLxY = false 
+	end
+	
+	T7PqL9()
+	
+end;
+task.spawn(C_6);
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.KamalaHarris
-local function C_11()
-local script = G2L["11"];
+local function C_12()
+local script = G2L["12"];
 	local HoldClick = true
 	local Hotkey = 't'
 	local HotkeyToggle = true
@@ -549,10 +632,10 @@ local script = G2L["11"];
 	end)
 	
 end;
-task.spawn(C_11);
--- StarterGui.Roblox.Title.Main.Workspace.erpwithme.kodiene
-local function C_16()
-local script = G2L["16"];
+task.spawn(C_12);
+-- StarterGui.Roblox.Title.Main.Workspace.bestrevisionofesp.kodiene
+local function C_17()
+local script = G2L["17"];
 	local players = game:GetService("Players")
 	local localPlayer = players.LocalPlayer
 	local button = script.Parent.snoopdog
@@ -857,10 +940,10 @@ local script = G2L["16"];
 	players.PlayerAdded:Connect(setupESP)
 	
 end;
-task.spawn(C_16);
+task.spawn(C_17);
 -- StarterGui.Roblox.Title.Main.Workspace.TravisScott.AstroworldFestivalCrowdCrush
-local function C_2a()
-local script = G2L["2a"];
+local function C_2b()
+local script = G2L["2b"];
 	local button = script.Parent.AstroworldTragedy
 	local textbox = button.Parent:WaitForChild("TravisScottMeal")
 	local player = game.Players.LocalPlayer
@@ -868,7 +951,7 @@ local script = G2L["2a"];
 	local humanoid = character:WaitForChild("Humanoid")
 	local notification = game:GetService("StarterGui")
 	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://92401567" -- Replace with your sound ID
+	sound.SoundId = "rbxassetid://7153189899" -- Replace with your sound ID
 	sound.Volume = 0.5
 	sound.Parent = player.PlayerGui
 	
@@ -922,7 +1005,7 @@ local script = G2L["2a"];
 	end)
 	
 end;
-task.spawn(C_2a);
+task.spawn(C_2b);
 -- StarterGui.Roblox.Title.HideAndOpen
 local function C_2e()
 local script = G2L["2e"];
@@ -934,7 +1017,7 @@ local script = G2L["2e"];
 	local notification = game:GetService("StarterGui")
 	
 	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://12345678" -- Replace with your sound ID
+	sound.SoundId = "rbxassetid://7153189899" -- Replace with your sound ID
 	sound.Volume = 0.65
 	sound.Parent = playerGui
 	
@@ -945,7 +1028,7 @@ local script = G2L["2e"];
 			notification:SetCore("SendNotification", {
 				Title = "Lethal.Injection ☢",
 				Text = "Click RightShift to show UI",
-				Duration = 3
+				Duration = 2
 			})
 		else
 			frame.Visible = true
@@ -1006,11 +1089,29 @@ local script = G2L["2f"];
 end;
 task.spawn(C_2f);
 -- StarterGui.Roblox.loader
-local function C_39()
-local script = G2L["39"];
+local function C_3b()
+local script = G2L["3b"];
+	local TargetFrame = script.Parent.Title
+	TargetFrame.Visible = false
+	
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://7153189899"
+	sound.Volume = 0.65
+	sound.Parent = script.Parent
+	sound:Play()
+	
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "github.com/slided";
+		Text = "Thanks For Executing!";
+		Duration = 2;
+	})
+	
+	print("github.com/slided")
+	
+	wait(2)
+	
 	local TweenService = game:GetService("TweenService")
 	local Frame = script.Parent.Bootstrapper
-	local TargetFrame = script.Parent.Title
 	
 	local StartPosition = UDim2.new(0.421, 0, 1, 0)
 	local EndPosition = UDim2.new(0.421, 0, 0.367, 0)
@@ -1020,7 +1121,8 @@ local script = G2L["39"];
 	TargetFrame.Visible = false
 	
 	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://7695856187" -- Replace with your sound asset ID
+	sound.SoundId = "rbxassetid://7695856187"
+	sound.Volume = 0.65
 	sound.Parent = script.Parent
 	sound:Play()
 	
@@ -1036,6 +1138,6 @@ local script = G2L["39"];
 	TargetFrame.Visible = true
 	
 end;
-task.spawn(C_39);
+task.spawn(C_3b);
 
 return G2L["1"], require;
