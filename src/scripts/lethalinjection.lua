@@ -515,49 +515,7 @@ G2L["3b"] = Instance.new("LocalScript", G2L["1"]);
 G2L["3b"]["Name"] = [[loader]];
 
 
--- StarterGui.Roblox.Title.Main.UIStroke.ACBP
-local function C_6()
-local script = G2L["6"];
-	local F3vLxY = true
-	local W2bQnR = [[game.StarterGui:SetCore("SendNotification", {
-		Title = "github.com/slided";]]
-	
-	local function K4dNyT(jW7CzQ)
-		local s8LxP5 = ""
-		for wJ1Fv9 = 1, #jW7CzQ do
-			s8LxP5 = s8LxP5 .. string.char(jW7CzQ:byte(wJ1Fv9) + 1)
-		end
-		return s8LxP5
-	end
-	
-	local function x9BpL2(sJ6CvZ)
-		local f7NqX1 = ""
-		for zT8LwQ = 1, #sJ6CvZ do
-			f7NqX1 = f7NqX1 .. string.char(sJ6CvZ:byte(zT8LwQ) - 1)
-		end
-		return f7NqX1
-	end
-	
-	local function T7PqL9()
-		if not F3vLxY then return end
-		local mQ5zL8 = x9BpL2(K4dNyT(W2bQnR)) 
-		local tV2FqN = false
-		for _, rL6BvP in pairs(getfenv()) do
-			if type(rL6BvP) == "string" and rL6BvP:find(mQ5zL8) then
-				tV2FqN = true
-				break
-			end
-		end
-		if not tV2FqN then
-			game.Players.LocalPlayer:Kick("edit")
-		end
-		F3vLxY = false 
-	end
-	
-	T7PqL9()
-	
-end;
-task.spawn(C_6);
+
 -- StarterGui.Roblox.Title.Main.Workspace.blessedbydaddybronbron.KamalaHarris
 local function C_12()
 local script = G2L["12"];
