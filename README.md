@@ -9,7 +9,7 @@
 ![Image](https://github.com/Slided/myrobloxscripts/blob/main/src/media/Screenshot%202024-11-12%20190554.png?raw=true)
 
 ## Main Hub
-![Image](https://github.com/Slided/myrobloxscripts/blob/main/src/media/Screenshot%202024-11-12%20190622.png?raw=true)
+![Image](https://github.com/Slided/myrobloxscripts/blob/main/src/media/version4or2.png?raw=true)
 
 ```lua
 loadstring(game:HttpGet('https://pastebin.com/raw/xRKRL8Ac'))()
